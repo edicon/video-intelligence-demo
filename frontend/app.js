@@ -109,6 +109,7 @@ app.get('/api/videos', (req, res) => {
               json: true
             },
             function(jsonReadErr, jsonResp, body) {
+              console.log(body);
               if (!jsonReadErr) {
                 fileArray.push({
                   name: file.metadata.name,
